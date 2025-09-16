@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Encuesta del Restaurante</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 40px;
+    }
+    form {
+      max-width: 650px;
+      margin: auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    h2 {
+      margin-bottom: 15px;
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin: 12px 0 5px;
+      font-weight: bold;
+      color: #444;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      background: #0077cc;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+  <form 
+    action="https://formspree.io/f/xzzvlnyo" 
+    method="POST"
+  >
+    <h2>Encuesta de Satisfacción</h2>
+
+    <!-- Datos básicos -->
+    <label for="nombre">Nombre Completo:</label>
+    <input type="text" id="nombre" name="Nombre Completo" required>
+
+    <label for="email">Tu correo:</label>
+    <input type="email" id="email" name="Correo" required>
+
+    <!-- Preguntas -->
+    <label for="plato">1. ¿Qué plato fue su favorito y por qué?</label>
+    <textarea id="plato" name="Plato Favorito y Motivo" rows="3"></textarea>
+
+    <label for="menu">2. ¿Considera que la variedad del menú es suficiente para sus gustos?</label>
+    <textarea id="menu" name="Variedad Menú" rows="2"></textarea>
+
+    <label for="porcion">3. ¿Las porciones fueron adecuadas para usted?</label>
+    <textarea id="porcion" name="Porciones Adecuadas" rows="2"></textarea>
+
+    <label for="personal">4. ¿El personal fue amable y atento con sus necesidades?</label>
+    <textarea id="personal" name="Amabilidad del Personal" rows="2"></textarea>
+
+    <label for="espera">5. ¿Cuánto tiempo esperó para ser atendido?</label>
+    <textarea id="espera" name="Tiempo de Espera" rows="2"></textarea>
+
+    <label for="pedido">6. ¿Recibió su pedido a tiempo?</label>
+    <textarea id="pedido" name="Pedido a Tiempo" rows="2"></textarea>
+
+    <label for="decoracion">7. ¿Qué le pareció la decoración del restaurante?</label>
+    <textarea id="decoracion" name="Decoración Restaurante" rows="2"></textarea>
+
+    <label for="ambiente">8. ¿Considera que el ambiente es agradable y acogedor?</label>
+    <textarea id="ambiente" name="Ambiente Restaurante" rows="2"></textarea>
+
+    <label for="musica">9. ¿La música de fondo le pareció adecuada?</label>
+    <textarea id="musica" name="Música de Fondo" rows="2"></textarea>
+
+    <label for="conocer">10. ¿Cómo se enteró de nuestro restaurante?</label>
+    <textarea id="conocer" name="Cómo se Enteró" rows="2"></textarea>
+
+    <label for="sugerencia">11. ¿Tiene alguna sugerencia para mejorar nuestro servicio o menú?</label>
+    <textarea id="sugerencia" name="Sugerencias" rows="3"></textarea>
+
+    <!-- Redirección opcional después de enviar -->
+    <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+
+    <button type="submit">Enviar Encuesta</button>
+  </form>
+
+</body>
+</html>
